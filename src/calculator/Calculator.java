@@ -3,7 +3,7 @@ package calculator;
 import utils.LogUtil;
 
 public class Calculator {
-    public static void test() {
+    public static void main(String[] args) {
         double result = new Calculator().cal(1, 8.9, "-");
         LogUtil.log(String.valueOf(result));
     }
