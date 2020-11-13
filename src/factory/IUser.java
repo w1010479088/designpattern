@@ -2,9 +2,9 @@ package factory;
 
 public interface IUser {
 
-    UserEntity read(int id);
+    UserEntity get(int id);
 
-    void edit(UserEntity item);
+    void add(UserEntity item);
 
-    void del(UserEntity item);
+    void remove(UserEntity item);
 }

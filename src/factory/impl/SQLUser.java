@@ -5,17 +5,17 @@ import factory.UserEntity;
 
 public class SQLUser implements IUser {
     @Override
-    public UserEntity read(int id) {
+    public UserEntity get(int id) {
         return UserEntity.emptyUser();
     }
 
     @Override
-    public void edit(UserEntity item) {
+    public void add(UserEntity item) {
 
     }
 
     @Override
-    public void del(UserEntity item) {
+    public void remove(UserEntity item) {
 
     }
 }
