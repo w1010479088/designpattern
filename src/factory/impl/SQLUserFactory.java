@@ -5,13 +5,16 @@ import factory.IFactory;
 import factory.IUser;
 
 public class SQLUserFactory implements IFactory {
+    private final IUser user = new SQLUser();
+    private final IDepartment department = new SQLDepartment();
+
     @Override
     public IUser createUser() {
-        return new SQLUser();
+        return user;
     }
 
     @Override
     public IDepartment createDepartment() {
-        return new SQLDepartment();
+        return department;
     }
 }
